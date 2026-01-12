@@ -105,6 +105,14 @@ function getXAxisSpec(rangeKey) {
 
 let chart;
 
+
+function formatTooltipDate(iso) {
+  const d = parseISODateUTC(iso);
+  if (!d) return iso || "";
+  return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" }); // "Jan 12, 2026"
+}
+
+
 function renderLineChart(canvas, label, points, rangeKey, isPercent = false) {
   const filtered = filterPointsByRange(points, rangeKey);
 
@@ -143,7 +151,7 @@ function renderLineChart(canvas, label, points, rangeKey, isPercent = false) {
           callbacks: {
             title: (items) => {
               const iso = items?.[0]?.label;
-              return iso ? fmtDate(iso) : "";
+              return iso ? formatTooltipDate(iso) : "";
             },
             label: (ctx) => {
               const v = ctx.raw;
