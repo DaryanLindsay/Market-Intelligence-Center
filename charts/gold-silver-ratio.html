@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gold vs Silver Ratio</title>
+  <meta name="description" content="Gold to Silver ratio chart using cached JSON data." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/chart.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Gold vs Silver Ratio</h1>
+    <div class="meta" id="lastUpdated">Last updated: —</div>
+
+
+    <div id="context"></div>
+    <div id="takeaway"></div>
+    
+    <div id="tf" class="tf"></div>
+
+    <div class="chart-wrap">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script type="module">
+    import { renderRatioPage } from "../assets/js/charts/ratioCharts.js";
+
+    renderRatioPage({
+      numeratorUrl: "../data-cache/gold.json",
+      denominatorUrl: "../data-cache/silver.json",
+      title: "Gold vs Silver Ratio",
+      datasetLabel: "Gold / Silver Ratio",
+      yTitle: "Gold ÷ Silver",
+      yearStep: 5,
+      enableTimeframes: true,
+      defaultTimeframe: "MAX",
+      takeawayProfile: {
+      noun: "gold-to-silver ratio",
+      lowHeadline: "Silver strong vs gold (risk-on metals)",
+      normalHeadlineAbove: "Gold outperforming silver",
+      normalHeadlineBelow: "Silver leading gold", 
+    }
+
+    }).catch(err => {
+      console.error(err);
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<pre style="color:red;white-space:pre-wrap">${err.stack || err}</pre>`
+      );
+    });
+  </script>
+</body>
+</html>

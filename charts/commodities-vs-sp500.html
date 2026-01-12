@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>S&P Commodity Index / S&P 500 Ratio</title>
+  <meta name="description" content="S&P commodity index to S&P 500 ratio chart using cached JSON data." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/chart.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+
+<body>
+  <div class="wrap">
+    <h1>S&P Commodity Index / S&P 500 Ratio</h1>
+    <div class="meta" id="lastUpdated">Last updated: —</div>
+
+  
+
+    <div id="context"></div>
+    <div id="takeaway"></div>
+
+    <div id="tf" class="tf"></div>
+    
+    <div class="chart-wrap">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script type="module">
+    import { renderRatioPage } from "../assets/js/charts/ratioCharts.js";
+
+    renderRatioPage({
+      numeratorUrl: "../data-cache/commodities.json",
+      denominatorUrl: "../data-cache/sp500.json",
+      title: "S&P Commodity Index / S&P 500 Ratio",
+      datasetLabel: "S&P Commodity Index / S&P 500",
+      yTitle: "Commodity Index ÷ S&P 500",
+      yearStep: 5,
+      enableTimeframes: true,
+      defaultTimeframe: "MAX",
+      takeawayProfile: {
+      noun: "commodities-to-S&P 500 ratio",
+      lowHeadline: "Commodities deeply undervalued vs stocks",
+      normalHeadlineBelow: "Commodities lagging stocks",
+      normalHeadlineAbove: "Commodities outperforming stocks (inflationary tilt)"
+    }
+
+
+    }).catch(err => {
+      console.error(err);
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<pre style="color:red;white-space:pre-wrap">${err.stack || err}</pre>`
+      );
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+/* assets/css/chart.css
+   Shared styling for chart pages (ratio charts, tokens, bargain monitor, etc.)
+ 
+   Contract: these classes/ids are used by existing chart HTML + JS:
+   .wrap, .meta, #tf.tf, .tf button.active, .context-block, .takeaway-box, .chart-wrap
+*/
+
+/* ---------- Design tokens ---------- */
+:root{
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --panel-soft: #fafafa;
+
+  --ink: #111111;
+  --muted: #5a5a5a;
+  --border: #e7e7e7;
+
+  --accent: #b31217;     /* restrained highlight */
+  --gold: #c9a227;       /* warm accent */
+  --shadow: 0 12px 28px rgba(0,0,0,0.08);
+
+  --radius-lg: 14px;
+  --radius-md: 12px;
+
+  --maxw: 1320px;
+}
+
+/* ---------- Base ---------- */
+*{ box-sizing: border-box; }
+html, body{ height: 100%; }
+
+body{
+  margin: 0; /* IMPORTANT for iframe embedding: avoid double margins */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+/* ---------- Page scaffold (used by your chart HTML) ---------- */
+.wrap{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 16px 18px 14px;
+  width: 100%;
+}
+
+h1{
+  margin: 0 0 6px;
+  font-size: 26px;
+  letter-spacing: -0.02em;
+  font-weight: 850;
+}
+
+.meta{
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+/* ---------- Timeframe controls (rendered by ratioCharts.js into #tf.tf) ---------- */
+.tf{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0 12px;
+}
+
+.tf button{
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tf button:hover{
+  background: var(--panel-soft);
+}
+
+.tf button.active{
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+/* ---------- Indicator context box (rendered by ratioCharts.js) ---------- */
+.context-block{
+  margin: 8px 0 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.context-block .muted{
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+/* ---------- Takeaway box (rendered by ratioCharts.js) ---------- */
+.takeaway-box{
+  margin: 0 0 12px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--panel-soft);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.takeaway-box .headline{
+  font-weight: 850;
+  margin-bottom: 6px;
+}
+
+/* ---------- Chart viewport ---------- */
+.chart-wrap{
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  padding: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.03);
+
+  /* iframe-friendly sizing: big chart, avoids inner scrollbars */
+  height: min(70vh, 720px);
+  min-height: 460px;
+}
+
+.chart-wrap canvas{
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px){
+  .wrap{ padding: 12px; }
+  h1{ font-size: 22px; }
+  .chart-wrap{
+    height: min(64vh, 640px);
+    min-height: 420px;
+  }
+}
+
+
+:root{
+  --red-soft: rgba(179,18,23,0.06);
+  --red-line: #b31217;
+
+  --green-soft: rgba(18,140,90,0.08);
+  --green-line: #128c5a;
+
+  --amber-soft: rgba(201,162,39,0.10);
+  --amber-line: #c9a227;
+}
+
+.context-block,
+.takeaway-box{
+  position: relative;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+/* Extreme low */
+.is-extreme-low{
+  background: var(--red-soft) !important;
+  border-color: rgba(179,18,23,0.25) !important;
+}
+.is-extreme-low::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 10px; bottom: 10px;
+  width: 4px;
+  background: var(--red-line);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Below median */
+.is-below-median{
+  background: rgba(179,18,23,0.035) !important;
+  border-color: rgba(179,18,23,0.18) !important;
+}
+
+/* Above median */
+.is-above-median{
+  background: var(--green-soft) !important;
+  border-color: rgba(18,140,90,0.25) !important;
+}
+.is-above-median::before{
+  content: "";
+  position: absolute;
+  left: 0; top: 10px; bottom: 10px;
+  width: 4px;
+  background: var(--green-line);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Extreme high */
+.is-extreme-high{
+  background: var(--amber-soft) !important;
+  border-color: rgba(201,162,39,0.35) !important;
+}
+
+.title,
+h1{
+  color: #000000;
+  font-weight: 800;
+}
+
+

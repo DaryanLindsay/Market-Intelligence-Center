@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gold / S&P 500 Ratio</title>
+  <meta name="description" content="Gold to S&P 500 ratio chart using cached JSON data." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../assets/css/chart.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>Gold / S&P 500 Ratio</h1>
+    <div class="meta" id="lastUpdated">Last updated: —</div>
+
+
+    <div id="context"></div>
+    <div id="takeaway"></div>
+    
+    <div id="tf" class="tf"></div>
+
+    <div class="chart-wrap">
+      <canvas id="chart"></canvas>
+    </div>
+  </div>
+
+  <script type="module">
+    import { renderRatioPage } from "../assets/js/charts/ratioCharts.js";
+
+    renderRatioPage({
+      numeratorUrl: "../data-cache/gold.json",
+      denominatorUrl: "../data-cache/sp500.json",
+      title: "Gold / S&P 500 Ratio",
+      datasetLabel: "Gold / S&P 500 Ratio",
+      yTitle: "Gold ÷ S&P 500",
+      yearStep: 5,
+      enableTimeframes: true,
+      defaultTimeframe: "MAX",
+      takeawayProfile: {
+      noun: "gold-to-stocks ratio",
+      lowHeadline: "Gold at historic discount relative to equities",
+      normalHeadlineBelow: "Gold lagging stocks",
+      normalHeadlineAbove: "Gold leading stocks"
+    }
+    }).catch(err => {
+      console.error(err);
+      document.body.insertAdjacentHTML(
+        "beforeend",
+        `<pre style="color:red;white-space:pre-wrap">${err.stack || err}</pre>`
+      );
+    });
+  </script>
+</body>
+</html>
