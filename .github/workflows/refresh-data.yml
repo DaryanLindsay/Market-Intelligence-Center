@@ -27,8 +27,8 @@ jobs:
         run: |
           node automation/updateData.js
           node automation/updateCoinData.js
-          node automation/updateGold.js
-          node automation/updateWhatever.js
+          node automation/updateMetalData.js
+          node automation/commodityBargainMonitor.js
 
       - name: Commit updated cache
         run: |
