@@ -171,8 +171,8 @@ function renderLineChart(canvas, label, points, rangeKey, isPercent = false) {
 
 export async function initTokenPage({ tokenKey }) {
   const [tokenization, gold] = await Promise.all([
-    loadJSON("/data-cache/tokenization.json"),
-    loadJSON("/data-cache/gold.json")
+    loadJSON("../data-cache/tokenization.json"),
+    loadJSON("../data-cache/gold.json")
   ]);
 
   const token = tokenization?.tokens?.[tokenKey];
