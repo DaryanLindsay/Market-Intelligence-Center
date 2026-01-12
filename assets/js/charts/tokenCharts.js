@@ -40,6 +40,14 @@ function formatPct(x) {
   return (x * 100).toLocaleString(undefined, { maximumFractionDigits: 2 }) + "%";
 }
 
+function formatUpdated(iso) {
+  if (!iso) return "—";
+  const dt = new Date(iso);
+  if (Number.isNaN(dt.getTime())) return "—";
+  return dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
+
 function parseISODateUTC(iso) {
   // Expect "YYYY-MM-DD"
   const d = new Date(iso + "T00:00:00Z");
@@ -174,6 +182,10 @@ export async function initTokenPage({ tokenKey }) {
     loadJSON("../data-cache/tokenization.json"),
     loadJSON("../data-cache/gold.json")
   ]);
+
+  const updated = tokenization?.lastUpdated || gold?.lastUpdated;
+  const lastUpdatedEl = document.getElementById("lastUpdated");
+  if (lastUpdatedEl) lastUpdatedEl.textContent = "Last updated: " + formatUpdated(updated);
 
   const token = tokenization?.tokens?.[tokenKey];
   if (!token) throw new Error(`Token key not found in tokenization.json: ${tokenKey}`);

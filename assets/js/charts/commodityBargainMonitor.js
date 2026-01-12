@@ -10,6 +10,13 @@ async function loadJSON(url) {
   return r.json();
 }
 
+function formatUpdated(iso) {
+  if (!iso) return "—";
+  const dt = new Date(iso);
+  if (Number.isNaN(dt.getTime())) return "—";
+  return dt.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
+}
+
 function fmtPct(x) {
   if (!Number.isFinite(x)) return "—";
   return `${(x * 100).toFixed(0)}%`;
@@ -85,7 +92,7 @@ async function main() {
   const radarItems = items.filter((it) => Number(it.ret3y) <= radar);
 
   metaEl.textContent =
-    `Last updated: ${new Date(payload.lastUpdated).toLocaleString()} · ` +
+    `Last updated: ${formatUpdated(payload.lastUpdated)} · ` +
     `Lookback: ${payload.lookbackYears}Y · ` +
     `Radar: ≤ ${fmtPct(radar)}`;
 

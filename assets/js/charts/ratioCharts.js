@@ -333,7 +333,7 @@ export async function renderRatioPage({
     loadJSON(denominatorUrl)
   ]);
 
-  const updated = numJson.lastUpdated || denJson.lastUpdated;
+  const updated = denJson.lastUpdated || numJson.lastUpdated;
   const lastUpdatedEl = document.getElementById("lastUpdated");
   if (lastUpdatedEl) lastUpdatedEl.textContent = "Last updated: " + formatUpdated(updated);
 
