@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-01-30T14:02:48.993Z",
+  "lastUpdated": "2026-01-31T13:52:06.671Z",
   "source": "Stooq CSV (daily)",
   "symbol": "XAUUSD",
   "currency": "USD",
@@ -57227,6 +57227,10 @@
     {
       "date": "2026-01-29",
       "close": 5378.77
+    },
+    {
+      "date": "2026-01-30",
+      "close": 4847.87
     }
   ]
 }
