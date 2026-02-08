@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-07T13:53:57.127Z",
+  "lastUpdated": "2026-02-08T13:54:55.045Z",
   "source": "Yahoo v8 chart (daily)",
   "lookbackYears": 3,
   "radarThreshold": -0.5,
@@ -7,42 +7,42 @@
     {
       "label": "Silver (SI=F)",
       "symbol": "SI=F",
-      "ret3y": 2.4601163571249494,
+      "ret3y": 2.4673308600958017,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
     {
       "label": "Gold (GC=F)",
       "symbol": "GC=F",
-      "ret3y": 1.6530920184642635,
+      "ret3y": 1.6684170694359137,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
     {
       "label": "Platinum (PL=F)",
       "symbol": "PL=F",
-      "ret3y": 1.1667530294248722,
+      "ret3y": 1.1730669241249783,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
     {
       "label": "Coffee (KC=F)",
       "symbol": "KC=F",
-      "ret3y": 0.6878201078189354,
+      "ret3y": 0.6733068019722659,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
     {
       "label": "Cocoa (CC=F)",
       "symbol": "CC=F",
-      "ret3y": 0.6286379511059372,
+      "ret3y": 0.611951882033372,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
     {
       "label": "Copper (HG=F)",
       "symbol": "HG=F",
-      "ret3y": 0.45010515536035256,
+      "ret3y": 0.4546803628467255,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
@@ -56,7 +56,7 @@
     {
       "label": "Palladium (PA=F)",
       "symbol": "PA=F",
-      "ret3y": 0.0997080337777454,
+      "ret3y": 0.1051028041075932,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
@@ -91,7 +91,7 @@
     {
       "label": "Cotton (CT=F)",
       "symbol": "CT=F",
-      "ret3y": -0.2667226632057843,
+      "ret3y": -0.23850123209183494,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
@@ -112,7 +112,7 @@
     {
       "label": "Sugar (SB=F)",
       "symbol": "SB=F",
-      "ret3y": -0.31703776568785025,
+      "ret3y": -0.315585651125068,
       "fromDate": "2023-02-06",
       "toDate": "2026-02-06"
     },
