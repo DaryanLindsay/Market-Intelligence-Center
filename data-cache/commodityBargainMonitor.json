@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T14:11:49.072Z",
+  "lastUpdated": "2026-02-17T14:12:57.039Z",
   "source": "Yahoo v8 chart (daily)",
   "lookbackYears": 3,
   "radarThreshold": -0.5,
@@ -7,128 +7,128 @@
     {
       "label": "Silver (SI=F)",
       "symbol": "SI=F",
-      "ret3y": 2.545010269898979,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": 2.342629232671561,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Gold (GC=F)",
       "symbol": "GC=F",
-      "ret3y": 1.723724265828583,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": 1.648282893766793,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Platinum (PL=F)",
       "symbol": "PL=F",
-      "ret3y": 1.1924116362528911,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": 1.1736755871108682,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Coffee (KC=F)",
       "symbol": "KC=F",
-      "ret3y": 0.6947189077723641,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": 0.5105987938683116,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Copper (HG=F)",
       "symbol": "HG=F",
-      "ret3y": 0.38554792542361005,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
-    },
-    {
-      "label": "Cocoa (CC=F)",
-      "symbol": "CC=F",
-      "ret3y": 0.3662724151087371,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": 0.3740885009335646,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Natural Gas (NG=F)",
       "symbol": "NG=F",
-      "ret3y": 0.2678945672897286,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": 0.3485714064138472,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
+    },
+    {
+      "label": "Cocoa (CC=F)",
+      "symbol": "CC=F",
+      "ret3y": 0.30565760470242465,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Palladium (PA=F)",
       "symbol": "PA=F",
-      "ret3y": 0.13318451128342734,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": 0.11111111111111116,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "RBOB Gasoline (RB=F)",
       "symbol": "RB=F",
-      "ret3y": -0.12321899454608298,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": -0.11444230279357226,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Heating Oil (HO=F)",
       "symbol": "HO=F",
-      "ret3y": -0.17959302251608444,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": -0.14866705018525983,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "WTI Crude (CL=F)",
       "symbol": "CL=F",
-      "ret3y": -0.195693683446313,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
+      "ret3y": -0.1827351010929803,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Brent Crude (BZ=F)",
       "symbol": "BZ=F",
-      "ret3y": -0.20178529983950855,
-      "fromDate": "2023-02-16",
-      "toDate": "2026-02-16"
-    },
-    {
-      "label": "Orange Juice (OJ=F)",
-      "symbol": "OJ=F",
-      "ret3y": -0.20979173211530389,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
-    },
-    {
-      "label": "Soybeans (ZS=F)",
-      "symbol": "ZS=F",
-      "ret3y": -0.26559714795008915,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": -0.18674698795180722,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Cotton (CT=F)",
       "symbol": "CT=F",
-      "ret3y": -0.27475477518675717,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": -0.20498443318304616,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
+    },
+    {
+      "label": "Soybeans (ZS=F)",
+      "symbol": "ZS=F",
+      "ret3y": -0.25012276968407265,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
+    },
+    {
+      "label": "Orange Juice (OJ=F)",
+      "symbol": "OJ=F",
+      "ret3y": -0.2774770805298802,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Wheat (ZW=F)",
       "symbol": "ZW=F",
-      "ret3y": -0.30713383838383834,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": -0.2932723709993469,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Sugar (SB=F)",
       "symbol": "SB=F",
-      "ret3y": -0.3500000359877088,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": -0.3629145053463668,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     },
     {
       "label": "Corn (ZC=F)",
       "symbol": "ZC=F",
-      "ret3y": -0.36970802919708035,
-      "fromDate": "2023-02-13",
-      "toDate": "2026-02-13"
+      "ret3y": -0.3673921062338621,
+      "fromDate": "2023-02-17",
+      "toDate": "2026-02-17"
     }
   ]
 }
