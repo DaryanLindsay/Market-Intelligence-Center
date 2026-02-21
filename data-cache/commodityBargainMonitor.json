@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T14:06:01.810Z",
+  "lastUpdated": "2026-02-21T13:52:59.352Z",
   "source": "Yahoo v8 chart (daily)",
   "lookbackYears": 3,
   "radarThreshold": -0.5,
@@ -7,126 +7,126 @@
     {
       "label": "Silver (SI=F)",
       "symbol": "SI=F",
-      "ret3y": 2.695870815567956,
+      "ret3y": 2.7625405406442582,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Gold (GC=F)",
       "symbol": "GC=F",
-      "ret3y": 1.7643207855973815,
+      "ret3y": 1.7601199152686853,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Platinum (PL=F)",
       "symbol": "PL=F",
-      "ret3y": 1.2677416157268828,
+      "ret3y": 1.3015804848588206,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Coffee (KC=F)",
       "symbol": "KC=F",
-      "ret3y": 0.4633581499551731,
+      "ret3y": 0.48264331353888945,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Natural Gas (NG=F)",
       "symbol": "NG=F",
-      "ret3y": 0.42498796980997366,
+      "ret3y": 0.4698504576072664,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Copper (HG=F)",
       "symbol": "HG=F",
-      "ret3y": 0.35907431993414707,
+      "ret3y": 0.3770220677245031,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Palladium (PA=F)",
       "symbol": "PA=F",
-      "ret3y": 0.14284776688615253,
+      "ret3y": 0.16900573779550188,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Cocoa (CC=F)",
       "symbol": "CC=F",
-      "ret3y": 0.1412884333821376,
-      "fromDate": "2023-02-21",
-      "toDate": "2026-02-20"
-    },
-    {
-      "label": "RBOB Gasoline (RB=F)",
-      "symbol": "RB=F",
-      "ret3y": -0.07078986565119327,
+      "ret3y": 0.12737920937042468,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Heating Oil (HO=F)",
       "symbol": "HO=F",
-      "ret3y": -0.09864247690258565,
+      "ret3y": -0.07382069306632233,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "WTI Crude (CL=F)",
       "symbol": "CL=F",
-      "ret3y": -0.1302521707109,
+      "ret3y": -0.1282826129553043,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Brent Crude (BZ=F)",
       "symbol": "BZ=F",
-      "ret3y": -0.14400970830083604,
+      "ret3y": -0.13594220952034486,
+      "fromDate": "2023-02-21",
+      "toDate": "2026-02-20"
+    },
+    {
+      "label": "RBOB Gasoline (RB=F)",
+      "symbol": "RB=F",
+      "ret3y": -0.173166096199861,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Cotton (CT=F)",
       "symbol": "CT=F",
-      "ret3y": -0.1961195684168704,
+      "ret3y": -0.2210825481273192,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Orange Juice (OJ=F)",
       "symbol": "OJ=F",
-      "ret3y": -0.21050406997973892,
+      "ret3y": -0.23316392049402024,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Wheat (ZW=F)",
       "symbol": "ZW=F",
-      "ret3y": -0.23817455029980017,
+      "ret3y": -0.23584277148567623,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Soybeans (ZS=F)",
       "symbol": "ZS=F",
-      "ret3y": -0.2513317191283293,
+      "ret3y": -0.2655367231638418,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Sugar (SB=F)",
       "symbol": "SB=F",
-      "ret3y": -0.3516174414827137,
+      "ret3y": -0.32958273596419874,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     },
     {
       "label": "Corn (ZC=F)",
       "symbol": "ZC=F",
-      "ret3y": -0.35562086700955176,
+      "ret3y": -0.37178545187362233,
       "fromDate": "2023-02-21",
       "toDate": "2026-02-20"
     }
