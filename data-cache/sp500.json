@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-23T14:14:04.770Z",
+  "lastUpdated": "2026-02-24T14:17:01.566Z",
   "source": "Yahoo v8 chart",
   "symbol": "^GSPC",
   "currency": "USD",
@@ -56623,6 +56623,10 @@
     {
       "date": "2026-02-20",
       "close": 6909.509765625
+    },
+    {
+      "date": "2026-02-23",
+      "close": 6837.75
     }
   ]
 }
