@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T14:05:21.237Z",
+  "lastUpdated": "2026-02-28T13:47:56.764Z",
   "source": "Yahoo v8 chart",
   "symbol": "^SPGSCI",
   "currency": "USD",
@@ -42486,7 +42486,7 @@
     },
     {
       "date": "2026-02-27",
-      "close": 603.228271484375
+      "close": 610.9000244140625
     }
   ]
 }
