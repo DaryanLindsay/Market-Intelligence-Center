@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-21T13:52:36.919Z",
+  "lastUpdated": "2026-03-22T13:53:00.707Z",
   "source": "Yahoo v8 chart (daily)",
   "lookbackYears": 3,
   "radarThreshold": -0.5,
@@ -91,7 +91,7 @@
     {
       "label": "Cotton (CT=F)",
       "symbol": "CT=F",
-      "ret3y": -0.12937059966131104,
+      "ret3y": -0.12833467373026208,
       "fromDate": "2023-03-20",
       "toDate": "2026-03-20"
     },
@@ -112,7 +112,7 @@
     {
       "label": "Sugar (SB=F)",
       "symbol": "SB=F",
-      "ret3y": -0.23681638360358137,
+      "ret3y": -0.23339842967834534,
       "fromDate": "2023-03-20",
       "toDate": "2026-03-20"
     },
